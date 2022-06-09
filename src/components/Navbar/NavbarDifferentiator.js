@@ -9,8 +9,6 @@ const NavbarDifferentiator = () => {
   const [navbarResponsive, setNavbarResponsive] = useState(true);
   const [width, setWidth] = useState(0)
   const user = useSelector(state => state.user.user);
-  console.log(user);
-
 
   useEffect(() => {
     if (width >= 770) {

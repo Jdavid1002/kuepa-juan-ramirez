@@ -21,7 +21,7 @@ export const getUsers = () => {
          const usersOrderRandom = newUsers.map((user, index) => {
            return{
              ...user,
-             orderRandom : Math.floor((Math.random() * (newUsers.length - index + 1)) + index)
+             orderRandom : Math.floor((Math.random() * ((newUsers.length - 1) - index + 1)) + index)
            }
          })
          .sort((a, b) => a.orderRandom - b.orderRandom)

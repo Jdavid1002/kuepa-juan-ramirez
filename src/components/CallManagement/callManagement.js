@@ -15,7 +15,11 @@ const CallManagement = ({
 
   useEffect(() => {
     dispatch(getUsers());
-    dispatch(getUser(users[Math.floor((Math.random() * (users.length - 0 + 1)) + 0)].account_id));
+    if(users.length > 0){
+      const randomPosition = Math.floor((Math.random() * ((users.length - 1) - 0 + 1)) + 0)
+      const user = users[randomPosition];
+      dispatch(getUser(user.account_id));
+    }
     //eslint-disable-next-line
   }, []);
 

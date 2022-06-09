@@ -2,7 +2,7 @@
   "name": "kuepa-juan-ramirez",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jdavid1002.github.io/kuepa-juan-ramirez/Dashboard",
+  "homepage": "https://jdavid1002.github.io/kuepa-juan-ramirez/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",

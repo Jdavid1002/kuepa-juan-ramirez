@@ -16,7 +16,7 @@ const CallSchedule = () => {
       setUsersMap(users);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [search])
+  }, [search, users, allUsers])
 
   return (
     <div className='ContainerSchedule' >

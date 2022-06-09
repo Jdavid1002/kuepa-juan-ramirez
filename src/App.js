@@ -10,6 +10,7 @@ function App() {
       <Layout>
         <Route exact path="/kuepa-juan-ramirez/Dashboard" component={Dashboard} />
         <Route exact path="/kuepa-juan-ramirez/" component={Dashboard} />
+        <Route exact path="/" component={Dashboard} />
       </Layout>
     </Switch>
   );

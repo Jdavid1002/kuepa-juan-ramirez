@@ -38,17 +38,17 @@ const NavbarDifferentiator = () => {
     {
       icon: "Home",
       order: 1,
-      link : "/Dashboard"
+      link : "/kuepa-juan-ramirez/Dashboard"
     },
     {
       icon: "Clipboard",
       order: 2,
-      link : "/Dashboard"
+      link : "/kuepa-juan-ramirez/Dashboard"
     },
     {
       icon: "Layout",
       order: 3,
-      link : "/Dashboard"
+      link : "/kuepa-juan-ramirez/Dashboard"
     },
   ];
 
@@ -57,13 +57,13 @@ const NavbarDifferentiator = () => {
       profile: user?.profile?.avatar,
       name: "Profile",
       order: 2,
-      link : "/Dashboard"
+      link : "/kuepa-juan-ramirez/Dashboard"
     },
     {
       icon : "help",
       name: "Help",
       order: 1,
-      link : "/Dashboard"
+      link : "/kuepa-juan-ramirez/Dashboard"
     }
   ]
 

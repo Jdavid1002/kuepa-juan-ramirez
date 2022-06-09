@@ -1,0 +1,23 @@
+.containerDashboard{
+  width: calc(100% - 230px);
+  height: calc(100vh - 10px);
+  background: #F5F8FA;
+  margin: 0px 60px 0px 60px;
+  padding: 10px 30px 0px 30px;
+  border-radius: 35px 0px 0px 35px;
+  overflow-y: scroll;
+}
+
+
+
+@media screen and (max-width: 770px) {
+  .containerDashboard{
+    width: 100%;
+    height: calc(100vh - 10px);
+    background: #F5F8FA;
+    margin: 0px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
+    border-radius: none;
+  }
+  
+}

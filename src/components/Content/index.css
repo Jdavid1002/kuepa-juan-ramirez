@@ -1,0 +1,384 @@
+.Content{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  height: 100%;
+}
+
+.Content_Title{
+  margin: 20px 0px;
+}
+
+.ContentHeader{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.ContentHeader_containerInputs{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.ContentHeader_containerInputs_select{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0px 30px 0px 0px;
+}
+
+.ContentHeader_containerInputs_input{
+  width: 100%;
+  max-width: 250px;
+  height: 30px;
+  background: #e2e5e6;
+  border: 1px solid #CED4DA;
+  border-radius: 10px;
+  margin: 0px 10px 0px 0px;
+  padding: 0px 10px;
+}
+
+.ContentHeader_containerInputs_input:focus{
+  border: 1px solid #9d9fa2;
+  outline: none;
+}
+
+
+.Content__Container{
+  width: 100%;
+  display: flex;
+}
+
+
+.ContainerUser{
+  width: 50%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 18px;
+  font-size: 0.8rem;
+  padding: 8px 15px;
+  margin: 30px 20px 50px 0px;
+}
+
+.ContainerUser_optionsContainer{
+  width: 40%;
+  margin: 30px 0px 0px 0px;
+}
+
+.ContainerUser_optionsContainer_option{
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+
+
+.ContainerUser_options_option_text{
+  width: 90px;
+}
+
+.ContainerUser_options_option_number{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.ContainerUser_percentageContainer{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.ContainerUser_percentageContainer_circle{
+  width: 100%;
+  max-width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 6px solid #F98193;
+}
+
+.ContainerGroupGoals{
+  width: 20%;
+  max-width: 350px;
+  height: 150px;
+  background: white;
+  font-size: 0.8rem;
+  border-radius: 18px;
+  padding: 8px 15px;
+  margin: 30px 0px;
+}
+
+
+.ContainerGroupGoals_container{
+  width: 100%;
+  height: 50px;
+  margin: 10px 0px;
+}
+
+.ContainerGroupGoals_container_text{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ContainerGroupGoals_container_lineContainer{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.ContainerGroupGoals_container_line{
+  height: 10px;
+  width: 50%;
+  border: none;
+}
+
+.line_gray{
+  background-color: rgb(154, 154, 154);
+  border-radius: 0px 2px 2px 0px;
+}
+
+.line_pink{
+  background-color: #F98193;
+  border-radius: 2px 0px 0px 2px;
+}
+
+
+.ContainerSchedule{
+  width: 40%;
+  height: 350px;
+  background: white;
+  border-radius: 18px;
+  font-size: 0.8rem;
+  padding: 8px 15px;
+  margin: 30px 20px 0px 0px;
+}
+
+.ContainerSchedule_tittle{
+  padding: 10px;
+}
+
+.ContainerSchedule_containerItems{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ContainerSchedule_containerItems_name{
+  width: 25%;
+}
+
+.ContainerSchedule_containerItems_info{
+  width: 40%;
+}
+
+.ContainerSchedule_containerItems_info_text{
+  font-size: 0.6rem;
+}
+
+.ContainerSchedule_containerItems_circleOrange{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FF9500;
+}
+
+.ContainerSchedule_containerItems_circleGray{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(154, 154, 154);
+}
+
+.ContainerSchedule_containerItems_containerIcons{
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ContainerSchedule_containerItems_lineOrange{
+  width: 5px;
+  height: 100%;
+  background: #FF9500;
+}
+.ContainerSchedule_containerItems_linePink{
+  width: 5px;
+  height: 100%;
+  background: #F98193;
+}
+
+.ContainerPlanToday{
+  width: 60%;
+}
+.ContainerPlanToday_containerText{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ContainerPlanToday_containerText_text{
+  margin: 0px 10px 0px 0px;
+}
+
+
+.ContainerPlanToday_containerItems{
+  width: 70%;
+  max-width: 350px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  font-size: 0.8rem;
+  border-radius: 18px;
+  padding: 8px 15px;
+  margin: 10px 0px 0px 0px;
+}
+
+.ContainerPlanToday_containerItems_containerColor{
+  width: 60%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0px 10px 0px 0px;
+}
+
+.ContainerPlanToday_containerItems_containerText{
+  width: 50%;
+}
+
+.ContainerPlanToday_containerItems_containerColor_circle{
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: white;
+}
+
+.ContainerPlanToday_containerItems_containerText_containerIconsAndText{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.ContainerPlanToday_containerItems_containerText_containerIconsAndText_text{
+  margin: 0px 0px 0px 10px;
+}
+
+.ContainerPlanToday_container_ItemsGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px 0px 0px 50px;
+}
+
+
+@media screen and (max-width:1030px) {
+  .ContainerUser{
+    width: 60%;
+  }  
+  .ContainerGroupGoals{
+    width: 40%;
+  }
+  .ContainerPlanToday_containerText{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 770px) {
+  .Content_Title{
+    text-align: center;
+  }
+
+  .ContentHeader, .Content__Container{
+    flex-direction: column;
+  }
+
+  .ContentHeader_containerInputs, .ContentHeader_containerInputs_select{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ContainerUser{
+    width: 90%;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContainerUser_percentageContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+  }
+
+  .ContainerUser_optionsContainer{
+    width: 100%;
+    margin: 0px;
+  }
+
+  .ContainerUser_options_option_text{
+    width: 100%;
+  }
+
+  .ContainerGroupGoals{
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .ContainerSchedule{
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  .ContainerPlanToday{
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .ContainerPlanToday_container_ItemsGrid{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .ContainerPlanToday_containerItems{
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContainerPlanToday_containerText{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContainerPlanToday_containerItems_containerText{
+    margin: 20px 0px 0px 0px;
+  }
+
+}

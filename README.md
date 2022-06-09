@@ -1,5 +1,3 @@
-# Welcome to the Profile App
-
 ## 1. System Requirements
 
 1. Node.js installed, versión >= 14

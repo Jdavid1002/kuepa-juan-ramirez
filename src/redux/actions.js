@@ -2,7 +2,9 @@ import axios from "axios";
 
 //CONSTANTES
 export const GET_USERS = "GET_USERS";
+export const GET_ALL_USERS = "GET_ALL_USERS";
 export const GET_USER = "GET_USER";
+export const SEARCH_USER = "SEARCH_USER";
 
 //Endpoints
 
@@ -17,25 +19,29 @@ export const getUsers = () => {
       .get(apiUsers)
       .then((res) => {
         if (res.data.length > 0) {
-         const newUsers = res.data.filter(user =>  user.name && user.name.length > 3 && user.name.length < 7);
-         const usersOrderRandom = newUsers.map((user, index) => {
-           return{
-             ...user,
-             orderRandom : Math.floor((Math.random() * ((newUsers.length - 1) - index + 1)) + index)
-           }
-         })
-         .sort((a, b) => a.orderRandom - b.orderRandom)
-         .map((user, index) => {
-            if(index < 12){
-              return user;
-            }else{
-              return false;
-            }
-         }).filter(user => user);
           dispatch({
-            type: GET_USERS,
-            payload: usersOrderRandom,
+            type: GET_ALL_USERS,
+            payload: res.data,
           });
+          const newUsers = res.data.filter(user =>  user.name && user.name.length > 3 && user.name.length < 7);
+          const usersOrderRandom = newUsers.map((user, index) => {
+            return{
+              ...user,
+              orderRandom : Math.floor((Math.random() * ((newUsers.length - 1) - index + 1)) + index)
+            }
+          })
+          .sort((a, b) => a.orderRandom - b.orderRandom)
+          .map((user, index) => {
+              if(index < 12){
+                return user;
+              }else{
+                return false;
+              }
+          }).filter(user => user);
+            dispatch({
+              type: GET_USERS,
+              payload: usersOrderRandom,
+            });
         } else {
           alert("No llegaron usuarios para mostrar");
         }
@@ -45,7 +51,6 @@ export const getUsers = () => {
       });
   };
 };
-
 
 export const getUser = (id) => {
   return (dispatch) => {

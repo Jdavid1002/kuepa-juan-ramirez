@@ -1,8 +1,10 @@
-import { GET_USERS , GET_USER} from "./actions";
+import { GET_USERS , GET_USER, GET_ALL_USERS, SEARCH_USER} from "./actions";
 
 const inicialState = {
   users: [],
   user: {},
+  allUsers : [],
+  search : ''
 };
 
 export default function userReducer(state = inicialState, action) {
@@ -17,6 +19,18 @@ export default function userReducer(state = inicialState, action) {
       return {
         ...state,
         user: action.payload,
+      };
+
+    case GET_ALL_USERS:
+      return {
+        ...state,
+        allUsers: action.payload,
+      };
+
+    case SEARCH_USER:
+      return {
+        ...state,
+        search: action.payload,
       };
     default:
       return {

@@ -1,10 +1,18 @@
 import React from 'react';
 import ListIcons from '../../assets/ListIcons';
-
+import { useDispatch } from 'react-redux';
 
 const HeaderContent = () => {
 
   const date = new Date().toISOString().split('T')[0];
+  const dispatch = useDispatch();
+
+  const updateSearchUsers = (e) => {
+    dispatch({
+      type: 'SEARCH_USER',
+      payload: e.target.value,
+    });
+  };
 
   return (
     <div className='ContentHeader' >
@@ -13,6 +21,7 @@ const HeaderContent = () => {
           type="text" 
           className='ContentHeader_containerInputs_input'
           placeholder='🔎 Search'  
+          onChange={(e) => updateSearchUsers(e)}
         />
         <ListIcons
           name='filter'

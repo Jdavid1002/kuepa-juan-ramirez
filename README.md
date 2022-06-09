@@ -22,6 +22,7 @@
 
 1. Every time the page is reloaded it will have new users randomly collected from the public api https://docs.opendota.com/#tag/pro-players.
 2. Also, every time the page is reloaded, the main user of the platform will change, changing the name and image of the public api https://docs.opendota.com/#tag/players%2Fpaths%2F~1players~1%7Baccount_id%7D%2Fget
+3. Typing in the top search will filter users into the "Conexiones de agenda para hoy" section.
 
 # File structure
 

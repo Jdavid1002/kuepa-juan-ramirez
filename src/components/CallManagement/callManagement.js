@@ -15,13 +15,17 @@ const CallManagement = ({
 
   useEffect(() => {
     dispatch(getUsers());
+    //eslint-disable-next-line
+  }, []);
+
+  useEffect(() => {
     if(users.length > 0){
       const randomPosition = Math.floor((Math.random() * ((users.length - 1) - 0 + 1)) + 0)
       const user = users[randomPosition];
       dispatch(getUser(user.account_id));
     }
     //eslint-disable-next-line
-  }, []);
+  }, [users]);
 
   return (
     <div className={useResponsive ? "Container_Menu__content" : ""} onClick={() => useResponsive ? onClose() : null } >

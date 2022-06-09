@@ -22,7 +22,7 @@ const NavbarResponsive = ({
     return (
       <nav className="Menu__content_responsive">
         <div className="Menu__content_logo">
-          <Link to="/Dashboard">
+          <Link to="/kuepa-juan-ramirez/">
             <img
               className="Menu__content_img"
               src="https://s.tmimgcdn.com/scr/1200x627/200400/diseno-de-logotipo-de-empresa-financiera-de-impuestos-contables_200426-original.jpg"

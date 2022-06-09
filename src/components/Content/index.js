@@ -12,11 +12,12 @@ import { useSelector } from 'react-redux';
 const Content = () => {
 
   const user = useSelector(state => state.user.user);
+  console.log(user);
 
   return (
     <div className='Content' >
       <HeaderContent />
-      <h1 className='Content_Title' > Hola, {user.profile.name} </h1>
+      <h1 className='Content_Title' > Hola, {user?.profile?.name} </h1>
       <div className='Content__Container' >
         <HelloUser />
         <GroupGoals />

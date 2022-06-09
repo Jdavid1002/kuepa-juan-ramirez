@@ -26,9 +26,9 @@ const CallManagement = ({
         <div className='CallContainer_Contacts'>
           {users.map((user, index) => {
             if(index % 2 === 0){
-              return <CardCall  user={user} index={index} from='FACEBOOK' />
+              return <CardCall  user={user} index={index} from='FACEBOOK' key={index} />
             }else{
-              return <CardCall  user={user} index={index} from='WHATSAPP' />
+              return <CardCall  user={user} index={index} from='WHATSAPP' key={index} />
             }
           })}
         </div>

@@ -11,10 +11,10 @@ const CardCall = ({
         {from}
       </div>
       <div className='CallContainer_Contacts_user_name' >
-        {user.name}
+        {user?.name}
       </div>
       <div className='CallContainer_Contacts_user_time' >
-        {user.orderRandom} ago.
+        {user?.orderRandom} ago.
       </div>
     </div>
   );

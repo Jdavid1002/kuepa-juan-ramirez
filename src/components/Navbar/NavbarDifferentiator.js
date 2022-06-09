@@ -9,6 +9,7 @@ const NavbarDifferentiator = () => {
   const [navbarResponsive, setNavbarResponsive] = useState(true);
   const [width, setWidth] = useState(0)
   const user = useSelector(state => state.user.user);
+  console.log(user);
 
 
   useEffect(() => {
@@ -55,7 +56,7 @@ const NavbarDifferentiator = () => {
 
   const buttonFooterNavbar = [
     {
-      profile: user.profile.avatar,
+      profile: user?.profile?.avatar,
       name: "Profile",
       order: 2,
       link : "/Dashboard"

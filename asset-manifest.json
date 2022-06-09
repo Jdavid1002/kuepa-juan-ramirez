@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kuepa-juan-ramirez/static/css/main.148e209a.css",
-    "main.js": "/kuepa-juan-ramirez/static/js/main.d6aa158e.js",
+    "main.js": "/kuepa-juan-ramirez/static/js/main.2ded1658.js",
     "static/js/787.afeca856.chunk.js": "/kuepa-juan-ramirez/static/js/787.afeca856.chunk.js",
     "index.html": "/kuepa-juan-ramirez/index.html",
     "main.148e209a.css.map": "/kuepa-juan-ramirez/static/css/main.148e209a.css.map",
-    "main.d6aa158e.js.map": "/kuepa-juan-ramirez/static/js/main.d6aa158e.js.map",
+    "main.2ded1658.js.map": "/kuepa-juan-ramirez/static/js/main.2ded1658.js.map",
     "787.afeca856.chunk.js.map": "/kuepa-juan-ramirez/static/js/787.afeca856.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.148e209a.css",
-    "static/js/main.d6aa158e.js"
+    "static/js/main.2ded1658.js"
   ]
 }
